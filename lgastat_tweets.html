@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<script type="text/javascript" src="https://mpld3.github.io/js/d3.v3.min.js"></script>
+<script type="text/javascript" src="https://mpld3.github.io/js/mpld3.v0.2.js"></script>
+</head>
+
+<style>
+
+</style>
+
+<body>
+<div id="fig_cumulative"></div>
+<br>
+<div id="fig_rates"></div>
+</body>
+
+<script type="text/javascript">
+
+  !function(mpld3){
+
+  	   d3.json('tweet_cumulative_jds.json', function(json) {mpld3.draw_figure("fig_cumulative", json);});
+  	   d3.json('tweetrates_jds.json', function(json) {mpld3.draw_figure("fig_rates", json);});
+
+  }(mpld3);
+
+
+</script>
+</html>
